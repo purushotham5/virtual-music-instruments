@@ -1,0 +1,670 @@
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+    
+    @media only screen and(max-width: 767px) {
+        html,
+        body {
+            overflow-y: hidden;
+            font-size: 55%;
+            scroll-behavior: smooth;
+        }
+    }
+    
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .header {
+        height: 100vh;
+        background-image: linear-gradient( rgba(225, 225, 225, 0.5), rgba(225, 225, 225, 0.15)), url("https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-simple-business-geometric-banner-background-screen-poster-image_50011.jpg");
+        /*  background-image: url("https://udaipurwebdesigner.in/wp-content/uploads/2019/08/header-bg-1.png");*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    /*nav-links {  a   }*/
+    
+   
+.navbar {
+    box-sizing: border-box;
+    box-shadow: inset 0px 1px 1px white, 2px 5px 5px black;
+background: rgba(225 225 225 /50%);
+min-height:50px;display:flex;justify-content: center;align-items: center;
+}
+
+/*nav-links {  a   }*/
+
+
+.nav-links{
+    color:black ;font-size: 18px;font-weight:500;font-variant: small-caps;text-decoration:none;text-transform:capitalize;padding:5px 15px;position:relative;bottom: .3em;border-bottom:1.5px solid red;display: inline;margin: 10px;
+}
+
+.nav-links:hover {padding: 25.5px 15px;
+    color: white;
+    letter-spacing: 1.5px;
+    background: navy;
+    border: 1px solid black;
+    border-bottom: none;
+}
+@media(max-width:992px) {
+    .nav-links {
+        border-bottom: none;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        row-gap: 1em;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*profile dropdown menu*/
+
+.dropdown-menu li a {
+    color: black;
+    font-variant: small-caps;
+    letter-spacing: 1.5px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.dropdown-menu li a:hover {color:white;
+    background: navy;
+    padding:100% auto;
+}
+
+
+
+    @media (max-width: 992px) {
+        .nav-links {
+            border-bottom: none;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            row-gap: 1em;
+            flex-wrap: wrap;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .nav-links {
+            border-bottom: none;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            row-gap: 1em;
+            flex-wrap: wrap;
+        }
+    }
+    
+    .card {
+        height: 300px;
+        width: auto;
+        background: #000;
+    }
+    
+    .card h1 {
+        color: black;
+        font-size: 30px;
+        font-weight: 1000;
+        font-variant: small-caps;
+        letter-spacing: 4px;
+        word-wrap: break-word;
+        word-spacing: 5px;
+        position: relative;
+        position: absolute;
+        float: left;
+        left: 6px;
+        top: 0em;
+    }
+    
+    .card img {
+        height: 230px;
+        width: 250px;
+        position: absolute;
+        float: left;
+        left: 5px;
+        top: 4em;
+        border: 1px solid blue;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+    /*home page start*/
+    
+    .container-fluid-1 {
+        height: 89vh;
+        background: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .col-md-12 h1 {
+        text-align: center;
+        text-transform: capitalize;
+        color: black;
+        font-variant-caps: all-small-caps;
+        font-weight: 1000;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        position: relative;
+        bottom: 2em;
+    }
+    
+    .col-md-12 p {
+        position: relative;
+        bottom: 2em;
+    }
+    
+    .col-md-12 img {
+        height: 200px;
+        width: 217px;
+        align-items: center;
+        position: relative;
+        left: 8em;
+    }
+    
+    @media (max-width: 1085px) {
+        .col-md-12 img {
+            height: 200px;
+            width: 200px;
+            align-items: center;
+            position: relative;
+            bottom: 2.5em;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        .col-md-12 img {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            bottom: 4em;
+            display: none;
+        }
+    }
+    /*home page end*/
+    /*music page show*/
+    
+    .section {
+        min-height: 100vh;
+background-image: linear-gradient(rgba(225 225 225/50%),rgba(225 225 225 /100%)),url(https://t3.ftcdn.net/jpg/04/48/88/90/360_F_448889068_lha199l9LNTzfsrzCUE8xpfzj5Bbn0kf.jpg); 
+background-repeat:repeat;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        border:1px solid black;
+    }
+    /*col-3*/
+    
+    .section .container-fluid .row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        top: 1em;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+       border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    
+    @media(max-width:768px) {
+        .section .container-fluid .row {
+            position: relative;
+            padding: 0px 0px;
+        }
+    }
+    /*col-lg-3 start*/
+    
+    .col-lg-3 {
+        display: flex;
+        height: 300px;
+        width: auto;
+        background: #000;
+        justify-content: center;
+        align-items: center;
+                       box-shadow:0px 0px 5px 1px rgb(81, 154, 231);
+
+    }
+    
+    .col-lg-3 .img img {
+        height: 290px;
+        width: 100%;
+        transition: .5s;             
+    }
+    
+    .col-lg-3 .img img:hover {
+        transform: scale(1.1);
+                       box-shadow:0px 0px 5px 1px rgb(81, 154, 231);
+
+    }
+    /*col-lg-3 ended*/
+    /*col-lg-4 start*/
+    
+    .col-lg-4 {
+        overflow-y: hidden;
+    min-height: 300px;
+        background-image: linear-gradient(rgba(4, 245, 213, 0.1), rgba(35, 192, 219, 0.1)), url(&quot;filesystem:chrome-extension://lllnjdmfnfjifcfpppjmcnanpokikcpl/persistent/wallpapers/current/blur.webp&quot;);
+               box-shadow:0px 0px 5px 1px rgb(81, 154, 231);
+        box-sizing: border-box;
+        opacity: 5px;
+        backdrop-filter: blur(10px);
+        backface-visibility: hidden;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        margin: 5px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        overflow-x: hidden;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+    
+    .col-lg-4:hover {
+        transform: scale(.8);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+    
+    @media (max-width: 768px) {
+        .col-lg-4 {
+            margin-right: 0.5em;  box-shadow: none;
+        }
+        .col-lg-4:hover{
+              box-shadow:0px 0px 5px 1px rgb(81, 154, 231);
+        }
+    }
+    
+    @media (max-width: 380px) {
+        .col-lg-4 {
+            height: 400px;
+        }
+    }
+    /*card-face-start*/
+    
+    .card-face {
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-wrap: wrap;
+        flex-grow: 5;
+        backdrop-filter: blur(10);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+    
+    .col-lg-4 .card-face h3 {
+        color: black;
+        width: 100%;
+        font: optional;
+        font-variant: small-caps;
+        font-weight: 800;
+        letter-spacing: 2px;
+        position: absolute;
+        top: -0.2em;
+        margin: 5px auto;
+        text-decoration: underline;
+        text-shadow: 1px 2px 1px blue;
+    }
+    
+    @media (max-width: 1080px) {
+        .col-lg-4 .card-face h3 {
+            color: black;
+            width: 100%;
+            font: optional;
+            font-variant: small-caps;
+            font-weight: 800;
+            letter-spacing: 0px;
+            position: absolute;
+            top: -0.2em;
+            margin: 5px auto;
+            text-decoration: underline;
+            text-shadow: 1px 2px 1px blue;
+        }
+    }
+    
+    .col-lg-4 .card-face p {
+        position: absolute;
+        font-variant: small-caps;
+        text-align: justify;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-size: 15px;
+        color: black;
+        margin: 10px;
+    }
+    /*
+    @media (max-width: 1189px) {
+        .col-lg-4 .card-face p {
+            margin: 5px;
+            position: absolute;
+            bottom: 7rem;
+        }
+    }
+
+    @media (max-width: 0992px) {
+        .col-lg-4 .card-face p {
+            margin: 5px;
+            position: relative;
+            bottom: 0em;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .col-lg-4 .card-face p {
+            margin: 5px;
+            position: absolute;
+            bottom: 9em;
+            line-height: 28px;
+        }
+    }*/
+    /*users ratting started*/
+    
+    .user-rate {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background: #000;
+    }
+    
+    @media (max-width: 1080px) {
+        .user-rate {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            width: 100%;
+            background: #000;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        .user-rate {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            width: 100%;
+            background: #000;
+        }
+    }
+    /*user input*/
+    /*---------------------------------------------like animation start for first instrument------------------------------------------------------*/
+    /*-------------------for first instruments------------------------------*/
+    
+    .like i {
+        font-size: 40px;
+    }
+    
+    @media (max-width:400px) {
+        .like i {
+            font-size: 20px;
+        }
+    }
+    
+    @keyframes heartbg {
+        from {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            color: black;
+        }
+        to {
+            color: red;
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+        }
+    }
+    
+    #like {
+        flex: 1;
+        display: flex;
+        color: red;
+        animation: heartbg .5s infinite;
+        -webkit-animation: heartbg .5s infinite;
+    }
+    
+    #like:hover {
+        cursor: pointer;
+        color: red;
+    }
+    
+    #unlike {   
+        color: red;
+        display: none;
+        cursor: pointer;
+    }
+    /*--------------------------------------------------------for first like animation ended---------------------------------------*/
+    /*----------------------------------------------------------------this is for second animation is started---------------------------*/
+    
+    #like1 {
+        flex: 1;
+        display: flex;
+        color: red;
+        animation: heartbg .5s infinite;
+        -webkit-animation: heartbg .5s infinite;
+    }
+    
+    #like1:hover {
+        cursor: pointer;
+        color: red;
+    }
+    
+    #unlike1 {
+        color: red;
+        display: none;
+        cursor: pointer;
+    }
+    /*--------------------------------------------------------for second like animation ended---------------------------------------*/
+    /*----------------------------------------------------------------this is for third  animation is started---------------------------*/
+    
+    #like2 {
+        flex: 1;
+        display: flex;
+        color: red;
+        animation: heartbg .5s infinite;
+        -webkit-animation: heartbg .5s infinite;
+    }
+    
+    #like2:hover {
+        cursor: pointer;
+        color: red;
+    }
+    
+    #unlike2 {
+        color: red;
+        display: none;
+        cursor: pointer;
+    }
+    /*--------------------------------------------------------for third like animation ended---------------------------------------*/
+    /*----------------------------------------------------------------this is for fourth  animation is started---------------------------*/
+    
+    #like3 {
+        flex: 1;
+        display: flex;
+        color: red;
+        animation: heartbg .5s infinite;
+        -webkit-animation: heartbg .5s infinite;
+    }
+    
+    #like3:hover {
+        cursor: pointer;
+        color: red;
+    }
+    
+    #unlike3 {
+        color: red;
+        display: none;
+        cursor: pointer;
+    }
+    /*--------------------------------------------------------for fourth like animation ended---------------------------------------*/
+    /*----------------------------------------------------------------this is for fifth  animation is started---------------------------*/
+    
+    #like4 {
+        flex: 1;
+        display: flex;
+        color: red;
+        animation: heartbg .5s infinite;
+        -webkit-animation: heartbg .5s infinite;
+    }
+    
+    #like4:hover {
+        cursor: pointer;
+        color: red;
+    }
+    
+    #unlike4 {
+        color: red;
+        display: none;
+        cursor: pointer;
+    }
+    /*--------------------------------------------------------for fourth like animation ended---------------------------------------*/
+    /*------------------------------------------like aniamtion ended for first instruments-----------------------------------------*/
+    /*ratting-start*/
+    
+    .ratting {
+        position: relative;
+    }
+    
+    .ratting i {
+        font-size: 20px;
+        color: yellow;
+    }
+    
+    @media(max-width:400px) {
+        .ratting i {
+            font-size: 15px;
+        }
+    }
+    /*ratting ended*/
+    
+    .user-rate #buy-1 {
+        color: black;
+        background-image: linear-gradient( to right top, #4b6430, #4a7749, #488a66, #459d85, #46afa5, #4abbb6, #4fc7c8, #55d3da, #56dde0, #58e7e6, #5bf1ec, #5ffbf1);
+        box-shadow: inset 2px 2px 3px #000, 2px 3px 1px black;
+        transform: rotateX(15deg);
+        text-transform: capitalize;
+        font-variant: small-caps;
+        font-weight: bolder;
+        font-size: large;
+        animation: btnbg 5s infinite;
+        -webkit-animation: btnbg 5s infinite;
+    }
+    
+    @keyframes btnbg {
+        from {
+            background: rgba(225, 225, 225, .3);
+        }
+        to {
+            background: pink;
+        }
+    }
+    
+    #buy-1:hover {
+        padding: auto 25px;
+    }
+    
+    @media(max-width:768px) {
+        .user-rate #buy-1 {
+            color: black;
+            background-image: linear-gradient( to right top, #4b6430, #4a7749, #488a66, #459d85, #46afa5, #4abbb6, #4fc7c8, #55d3da, #56dde0, #58e7e6, #5bf1ec, #5ffbf1);
+            box-shadow: inset 2px 2px 3px #000, 2px 3px 1px black;
+            transform: rotateX(15deg);
+            text-transform: capitalize;
+            font-variant: small-caps;
+            font-weight: bolder;
+            font-size: normal;
+            animation: btnbg 5s infinite;
+            -webkit-animation: btnbg 5s infinite;
+        }
+    }
+    /*btn animation ended*/
+    /*users ratting ended*/
+    /*col-lg-4 ended*/
+    /*col-lg-5 start*/
+    
+    .col-lg-4 {
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        column-gap: 1em;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-shrink: 5;
+        position: relative;
+        padding: 10px;
+    }
+    
+    .col-lg-4 audio {
+        margin-top: 3px;
+        padding: 5px;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 10px;
+    }
+    
+    .col-lg-4 audio:hover {
+        border: 1px solid white;
+        width: 100%;border-radius:50px;
+    }
+    /*col-lg-5 ended*/

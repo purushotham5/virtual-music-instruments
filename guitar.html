@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guitar world</title>
+    <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+    <link rel="stylesheet" type="text/css" href="guitar.css">
+    <!----------------------------------------------this link for fontwansome---cdn-----------link---------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!----------------------------------------------------------------link is ended-------------------------------------->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!----------------------------------------------------------------link is ended-------------------------------------->
+    <script src="stars.js"></script>
+
+</head>
+
+<body>
+    <div class="payment-method" id="pay">
+        <i class="fa fa-close" onclick="closePay()"></i>
+
+        <div class="payment-section">
+            <ul class="list-of-payments">
+                <li>
+                    <abbr title="paytm">
+                    <button type="button" class="btnn"><img src="https://paymentweek.com/wp-content/uploads/2017/08/paytm-logo-630x336.jpg" class="img-fluid"></button>
+                    </abbr>
+                </li>
+                <li><button type="button" class="btnn"><img src="data:image/png;base64,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"class="img-fluid"></button></li>
+                <li><button type="button" class="btnn"><img src="https://exchange4media.gumlet.io/news-photo/116386-111689-109614-100494.phonepelogo.jpg?format=webp&w=400&dpr=2.6"class="img-fluid"></button></li>
+                <li><button type="button" class="btnn"><img src="https://www.masumiheadwear.com/wp-content/uploads/2020/07/logo-e1594124640157.png"class="img-fluid"></button></li>
+                <li><button type="button" class="btnn"><img src="data:image/png;base64,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"class="img-fluid"></button></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="total" id="everything">
+        <header class="header" id="header">
+            <!------------------------navigation bsr was started----------------->
+            <nav class="navbar navbar-expand-lg  navbar-light  nav-tabs">
+                <div class="container-fluid">
+                    <a href="#header" class="navbar-brand">
+                        <img src="https://appedreview.com/app/wp-content/uploads/2017/02/Screen-Shot-2017-02-20-at-7.35.04-AM.png" style="height:50px;width:150px;" class="rounded">
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                        <ul class="nav navbar-nav navbar-right nav-pills mt-3">
+                            <li class="nav-item ">
+                                <a href="" class="nav-links active" data-toggle="pills" onclick="homeOpen() " id="homeActive"><i class="fas fa-guitar"></i>Guitar</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="piano.html" class="nav-links" data-toggle="pills">🎹piano</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="drum.html" class="nav-links active" data-toggle="pills"><i class="fas fa-drum"></i>drum</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="rolanddrum.html" class="nav-links active" data-toggle="pills"><i class="fab fa-battle-net"></i>beat</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="flute.html" class="nav-links active" data-toggle="pills"><i class="fab fa-confluence"></i> flute</a>
+
+                            </li>
+
+                            <li class="nav-item ">
+                                <a href="heart.html" class="nav-links active" data-toggle="pills"><i class="fas fa-backward"></i>Back</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!----------------------------------------------navigation bar was ended---------------------->
+            <div class="container-fluid-1">
+                <div class="row">
+
+                    <div class="col-lg-7 text-center justify-content-center">
+                        <h1>welcome to Guitar world</h1>
+                        <hr class="hr">
+                        <p><span>This is very best platform for the guitar batch in 2022</span><br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eius sunt veniam fugiat dolores odio laudantium dolorum necessitatibus. Ad r></b>totam perspiciatis
+                            modi
+                        </p>
+                        <br>
+                        <p>
+                            <span1>[ press the bello button to start your browsers ]</span1>
+                        </p>
+                        <a href="#section" class="btn">explore</a>
+                    </div>
+                    <div class="col-lg-5">
+                        <!--<img src="https://static.vecteezy.com/system/resources/previews/003/142/773/original/young-man-playing-guitar-semi-flat-color-character-vector.jpg" class="img-thumbnail">-->
+                        <!----     <img src="https://cdn.shopify.com/s/files/1/0832/7545/files/classical-guitar.jpg?v=1579420311" class="img-fluid" style="height:30%; ">-->
+                        <img src="https://img.freepik.com/free-photo/bearded-man-playing-guitar-holding-acoustic-guitar-his-hands-music-concept-bearded-guitarist-plays-play-guitar-beard-hipster-man-sitting-pub-live-music-guitars-strings_293990-2048.jpg?size=626&ext=jpg&ga=GA1.1.1999459783.1641945600"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------HOME PAGE ENDED---------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <section class="section" id="section">
+            <div class="container-fluid-2">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://rekkerd.org/img/201205/xhunaudio_ironaxe.jpg" class="img-fluid" style="border:1px solid white;">
+                        <hr style="background: white;height:2px;box-shadow:0 1px 5px 0.5px white">
+                        <div class="total-features">
+                            <h2>Features of this instrument :-</h2>
+                            <ul>
+                                <li>
+                                    Discover the features of each Virtual Guitarist plug-in and learn more about their signature controls.....
+                                </li>
+                                <li>
+                                    Smooth & Elegant Accompaniments. ...
+                                </li>
+                                <li>
+                                    Warm & Shiny Strums. ....
+                                </li>
+                                <li>
+                                    Glamorous & Catchy Licks. ...
+                                </li>
+                                <li>
+                                    Hard & Roaring Power Chords.....
+                                </li>
+                            </ul>
+                        </div>
+                        <hr style="background: white;height:2px;box-shadow:0 1px 5px 0.5px white">
+                        <div class="user-information">
+                            <div class=" user-ratting ">
+                                <span1>User Ratting</span1>
+                                <span><i class="fa fa-star "></i></span>
+                                <span><i class="fa fa-star "></i></span>
+                                <span><i class="fa fa-star "></i></span>
+                                <span><i class="fa fa-star "></i></span>
+                                <span><i class="fas fa-star-half-alt"style="color:orange;"></i></span>
+                            </div>
+                            <div class="user-graph ">
+                                <div class="container ">
+                                    <div class="col-sm-12 ">
+                                        <span2>5 Star</span2>
+                                        <div class="progress text-center ">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success " style="width:95%; "></div>
+                                        </div>
+                                        <span3>1M Star</span3>
+                                    </div>
+                                    <div class="col-sm-12 ">
+                                        <span2>4 Star</span2>
+                                        <div class="progress text-center ">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info " style="width:80%; "></div>
+                                        </div>
+                                        <span3>90K Star</span3>
+                                    </div>
+                                    <div class="col-sm-12 ">
+                                        <span2>3 Star</span2>
+                                        <div class="progress text-center ">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning " style="width:45%; "></div>
+                                        </div>
+                                        <span3>50K Star</span3>
+                                    </div>
+                                    <div class="col-sm-12 ">
+                                        <span2>2 Star</span2>
+                                        <div class="progress text-center ">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger " style="width:15%; "></div>
+                                        </div>
+                                        <span3>500 Star</span3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="background: white;height:2px;box-shadow:0 1px 5px 0.5px white">
+
+                        <div class="user-int">
+                            <div class="like">
+                                <i class="far fa-heart" onclick="tap()" id="like"></i>
+                                <i class="fas fa-heart-broken" onclick="pop()" id="unlike"></i>
+                            </div>
+
+                            <div class="target">
+                                <div class="container-1" id="con1">
+                                    <i class="far fa-star" onclick="Star1()" id="star1"></i>
+                                    <i class="far fa-star" onclick="Star2()" id="star2"></i>
+                                    <i class="far fa-star" onclick="Star3()" id="star3"></i>
+                                    <i class="far fa-star" onclick="Star4()" id="star4"></i>
+                                    <i class="far fa-star" onclick="Star5()" id="star5"></i>
+                                </div>
+                                <div class="container-2" id="con2">
+                                    <i class="fas fa-star" onclick="fstar1()" id="fstar1"></i>
+                                    <i class="far fa-star" onclick="Star2()" id="star2"></i>
+                                    <i class="far fa-star" onclick="Star3()" id="star3"></i>
+                                    <i class="far fa-star" onclick="Star4()" id="star4"></i>
+                                    <i class="far fa-star" onclick="Star5()" id="star5"></i>
+                                </div>
+
+                                <div class="container-3" id="con3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star" onclick="fstar2()" id="fstar2"></i>
+                                    <i class="far fa-star" onclick="Star3()" id="star3"></i>
+                                    <i class="far fa-star" onclick="Star4()" id="star3"></i>
+                                    <i class="far fa-star" onclick="Star5()" id="star3"></i>
+                                </div>
+
+                                <div class="container-4" id="con4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star" onclick="fstar3()" id="fstar3"></i>
+                                    <i class="far fa-star" onclick="Star4()" id="star4"></i>
+                                    <i class="far fa-star" onclick="Star5()" id="star5"></i>
+                                </div>
+
+                                <div class="container-5" id="con5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star" onclick="fstar4()" id="fstar3"></i>
+                                    <i class="far fa-star" onclick="Star5()" id="star2"></i>
+                                </div>
+                                <div class="container-6" id="con6">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star" id="fstar3"></i>
+                                    <i class="fas fa-star" onclick="fstar5()" id="fstar3"></i>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-success" onclick="openPay()">50$--Buy</button>
+                        </div>
+
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+                    <div class="col-md-6 ">
+                        <div class="audio">
+                            <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                            <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                            <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                            <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                            <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                        </div>
+                        <br>
+
+                        <hr style="background: white;height:2px;box-shadow:0 1px 5px 0.5px white;">
+
+                        <div class="questions">
+                            <h2>Frequently asked questions :-</h2>
+                            <br>
+                            <div id="total">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a href="#inner-text" data-bs-toggle="collapse" class="btn">how to play the guitar <i class ="fas fa-chevron-down"onclick> </i></a>
+                                    </div>
+                                    <div id="inner-text" class="collapse" data-bs-parent="total">
+                                        <div class="card-body">
+                                            please watch the videos which is available in the youtube
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a href="#inner-text-2" data-bs-toggle="collapse" class="btn">there are any chords are available to play the guitar  <i class ="fas fa-chevron-down"onclick> </i></a>
+                                    </div>
+                                    <div id="inner-text-2" class="collapse fade" data-bs-parent="total">
+                                        <div class="card-body">
+                                            please watch the videos which is available in the youtube
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a href="#inner-text-3" data-bs-toggle="collapse" class="btn">how to play the guitar <i class ="fas fa-chevron-down"onclick> </i></a>
+                                    </div>
+                                    <div id="inner-text-3" class="collapse fade" data-bs-parent="total">
+                                        <div class="card-body">
+                                            please watch the videos which is available in the youtube
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a href="#inner-text-4" data-bs-toggle="collapse" class="btn">there are any chords are available to play the guitar  <i class ="fas fa-chevron-down"onclick> </i></a>
+                                    </div>
+                                    <div id="inner-text-4" class="collapse fade" data-bs-parent="total">
+                                        <div class="card-body">
+                                            please watch the videos which is available in the youtube
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a href="#inner-text-5" data-bs-toggle="collapse" class="btn">there are any chords are available to play the guitar  <i class ="fas fa-chevron-down"onclick> </i></a>
+                                    </div>
+                                    <div id="inner-text-5" class="collapse fade " data-bs-parent="total ">
+                                        <div class="card-body">
+                                            please watch the videos which is available in the youtube
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a href="#inner-text-6" data-bs-toggle="collapse" class=" btn">there are any chords are available to play the guitar  <i class ="fas fa-chevron-down "onclick> </i></a>
+                                    </div>
+                                    <div id="inner-text-6 " class="collapse fade " data-bs-parent="total ">
+                                        <div class="card-body ">
+                                            please watch the videos which is available in the youtube
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-warning">
+                                        <a href="#inner-text-7" id="hell" data-bs-toggle="collapse" class=" btn">Ask Your Query<i class ="fas fa-chevron-down "> </i></a>
+                                    </div>
+                                    <div id="inner-text-7" class="collapse fade" data-bs-parent="total">
+                                        <div class="card-body">
+                                            <input type="text" placeholder="enter your query" name="" value="" style="outline:none;font-variant: small-caps;font-size:18px;" id="lol">
+                                            <a href="#section" onclick="popup()" class="btn btn-warning btn-md" data-toggle="collapse" data-bs-target="#hell" style="position:relative;float:right;right:0;text-transform:capitalize;font-variant: small-caps;letter-spacing:1.2px;">submit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="background: white;height:2px;box-shadow:0 1px 5px 0.5px white">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function popup() {
+            alert("Your Query Has Been Submitted");
+        }
+    </script>
+    <script>
+        function openPay() {
+            var a;
+            var bg = document.getElementById("everything");
+            var pop = document.getElementById("pay");
+            if (a == true) {
+                bg.style.display = "block"
+                pop.style.display = "none";
+                pop.style.transition = ".5s";
+                return a = false;
+            } else {
+                bg.style.display = "none"
+                pop.style.display = "flex";
+                return a = true;
+            }
+        }
+
+        function closePay() {
+            var b;
+            var bgg = document.getElementById("everything");
+            var popp = document.getElementById("pay");
+            if (b == true) {
+                bgg.style.display = "none"
+                popp.style.display =
+                    "flex";
+                return b = false;
+            } else {
+                bgg.style.display = "block"
+                popp.style.display = "none";
+                return b = true;
+            }
+        }
+    </script>
+</body>
+
+</html>

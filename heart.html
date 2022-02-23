@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Animated Heart Like Button</title>
+    <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+    <link rel="stylesheet" type="text/css" href="heart.css">
+    <!----------------------------------------------this link for fontwansome---cdn-----------link---------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!----------------------------------------------------------------link is ended-------------------------------------->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!----------------------------------------------------------------link is ended-------------------------------------->
+</head>
+
+<body>
+    <header class="header">
+        <!------------------------navigation bsr was started----------------->
+        <nav class="navbar navbar-expand-lg   navbar-light  nav-tabs">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="https://appedreview.com/app/wp-content/uploads/2017/02/Screen-Shot-2017-02-20-at-7.35.04-AM.png" style="height:50px;width:150pxcfcc;" class="img-thumbnail">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="nav navbar-nav navbar-right nav-pills mt-3">
+                        <li class="nav-item dropdown dropstart">
+                            <a href="" class="nav-links  dropdown-toggle" data-bs-toggle="dropdown">Instruments</a>
+                            <ul class="dropdown-menu bg-info">
+                                <li><a href="guitar.html" class="dropdown-item glyphicon-text-background text-capitalize text-center">guitar</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" id="dropdown-divider">
+                                </li>
+                                <li><a href="piano.html" class="dropdown-item text-capitalize text-center">piano<a></li>
+                                        <li>
+                                        <hr class="dropdown-divider">
+                                        </li>
+                                    <li><a href="drum.html" class="dropdown-item text-capitalize text-center">drum<a></li>
+                                        <li>
+                                        <hr class="dropdown-divider">
+                                        </li>
+                                    <li><a href="rolanddrum.html" class="dropdown-item text-capitalize text-center">beat<a></li>
+                                        <li>
+                                        <hr class="dropdown-divider">
+                                        </li>
+                                    <li><a href="fluit.html" class="dropdown-item text-capitalize text-center">fluit<a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="frontend(home).html" class="nav-links active" data-toggle="pills" onclick="homeOpen()" id="homeActive"><i class="fa fa-fw fa-home"></i>home</a>
+                                </li>
+                                <!-----------------------------this is for about dropdown----------------->
+
+                            </ul>
+                </div>
+            </div>
+        </nav>
+        <!----------------------------------------------navigation bar was ended---------------------->
+        <div class="container-fluid-1  justify-content-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>welcome <br>instruments world</h1>
+                    <p class="text-center"> [ we are providing very best sound quality virtual music instruments ]</p>
+                    <img src="https://images.squarespace-cdn.com/content/v1/588730692e69cfb6696afdc1/1491004165297-H8WFDZOYLO7H038PR0G0/final-animation.gif" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--------------------------------------------------------------------->
+    <!--------------------------------------------------------------------->
+    <section class="section">
+        <!-------------for guiter------->
+        <div class="container-fluid justify-content-center">
+            <div class="row  text-center p-3">
+                <!----------------------this fot image------------------------------------------>
+                <div class="col-lg-3  mt-2">
+                    <a href="" class="img">
+                        <img src="https://rekkerd.org/img/201205/xhunaudio_ironaxe.jpg">
+                    </a>
+                </div>
+                <!--------------------ended------------->
+                <!--------------------content started------------->
+                <div class="col-lg-4  mt-2" id="productdetails" onclick="rotate()">
+                    <div class="card-face" id="face" onclick="facePage()">
+                        <h3>Varazuvi Acoustic Guitar pro</h3>
+                        <p>24-bit High Resolution audio virtual in VST <br>32-bit/64-bit/Mac compatible.<br>volume,delay,sustain,release and attack parameters<br>THREE GROUPS: long pitch bend,string noise for added realism </p>
+                        <br>
+                        <div class="user-rate">
+                            <div class="like">
+                                <abbr title="like" style="text-decoration:none;">
+                            <i class="far fa-heart" onclick="tap()" id="like"class="likes"></i>
+                            </abbr>
+                                <abbr title="unlike" style="text-decoration:none;">
+                            <i class="fas fa-heart" onclick="pop()" id="unlike"class="unlikes"></i>
+                            </abbr>
+                            </div>
+                            <!--------------------------------------------------ratting---------------------->
+                            <div class="ratting">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <!------------------ratting end-------------------------->
+                            <a href="guitar.html" class="btn" id="buy-1">view details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  mt-2  text-center text-justify justify-content-between blur-background" style="background-image: linear-gradient(rgba(4, 245, 213, 0.1), rgba(35, 192, 219, 0.1)), url(&quot;filesystem:chrome-extension://lllnjdmfnfjifcfpppjmcnanpokikcpl/persistent/wallpapers/current/blur.webp&quot;);">
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Akon%20-%20Belly%20Dancer%20(Diloco%20Edit).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/belludncer.mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                </div>
+            </div>
+            <!-----------------ended----------------->
+
+
+            <!-----------------flute ended-------------->
+
+            <!----------------second instruments started i.e., fluit----------------------------------------------------------------------->
+            <div class="row  text-center p-3">
+                <!----------------------this fot image------------------------------------------>
+                <div class="col-lg-3  mt-2">
+                    <a href="" class="img">
+                        <img src="https://virtualpiano.net/wp-content/uploads/2021/06/How-to-play-Virtual-Piano-on-a-Tablet.png">
+                    </a>
+                </div>
+                <!--------------------ended-------------1
+                <!--------------------content started------------->
+                <div class="col-lg-4  mt-2" id="productdetails" onclick="rotate()">
+                    <div class="card-face" id="face" onclick="facePage()">
+                        <h3>Varazuvi Acoustic Guitar pro</h3>
+                        <p>24-bit High Resolution audio virtual in VST <br>32-bit/64-bit/Mac compatible.<br>volume,delay,sustain,release and attack parameters<br>THREE GROUPS: long pitch bend,string noise for added realism </p>
+                        <br>
+                        <div class="user-rate">
+                            <div class="like">
+                                <abbr title="like" style="text-decoration:none;">
+                            <i class="far fa-heart" onclick="tap1()" id="like1"class="likes">
+                            </i>
+                            </abbr>
+                                <abbr title="unlike" style="text-decoration:none;">
+                            <i class="fas fa-heart" onclick="pop1()" id="unlike1"class="unlikes"></i>
+                            </abbr>
+                            </div>
+                            <!--------------------------------------------------ratting---------------------->
+                            <div class="ratting">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <!------------------ratting end-------------------------->
+                            <a href="piano.html" class="btn" id="buy-1">view details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  mt-2  text-center text-justify justify-content-between">
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                </div>
+            </div>
+            <!-----------------ended----------------->
+            <!-----------------ended----------------->
+            <!--------------third  instruments started i.e., fluit----------------------------------------------------------------------->
+            <div class="row  text-center p-3">
+                <!----------------------this fot image------------------------------------------>
+                <div class="col-lg-3  mt-2">
+                    <a href="" class="img">
+                        <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/74895d48-96d3-11e6-99c1-00163ec9f5fa/3513666815/danys-virtual-drum-screenshot.jpg">
+                    </a>
+                </div>
+                <!--------------------ended------------->
+                <!--------------------content started------------->
+                <div class="col-lg-4  mt-2" id="productdetails" onclick="rotate()">
+                    <div class="card-face" id="face" onclick="facePage()">
+                        <h3>Varazuvi Acoustic Guitar pro</h3>
+                        <p>24-bit High Resolution audio virtual in VST <br>32-bit/64-bit/Mac compatible.<br>volume,delay,sustain,release and attack parameters<br>THREE GROUPS: long pitch bend,string noise for added realism </p>
+                        <br>
+                        <div class="user-rate">
+                            <div class="like">
+                                <abbr title="like" style="text-decoration:none;">
+                            <i class="far fa-heart" onclick="tap2()" id="like2">
+                            </i>
+                            </abbr>
+                                <abbr title="unlike" style="text-decoration:none;">
+                            <i class="fas fa-heart" onclick="pop2()" id="unlike2"></i>
+                            </abbr>
+                            </div>
+                            <!--------------------------------------------------ratting---------------------->
+                            <div class="ratting">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <!------------------ratting end-------------------------->
+                            <a href="" class="btn" id="buy-1">view details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  mt-2  text-center text-justify justify-content-between">
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                </div>
+            </div>
+            <!-----------------ended----------------->
+            <!-----------------fourth instruments ststted----------------->
+            <div class="row  text-center p-3">
+                <!----------------------this fot image------------------------------------------>
+                <div class="col-lg-3  mt-2">
+                    <a href="" class="img">
+                        <img src="https://media.4rgos.it/s/Argos/9496969_R_SET?w=270&h=270&qlt=75&fmt.jpeg.interlaced=true">
+                    </a>
+                </div>
+                <!--------------------ended------------->
+                <!--------------------content started------------->
+                <div class="col-lg-4  mt-2" id="productdetails" onclick="rotate()">
+                    <div class="card-face" id="face" onclick="facePage()">
+                        <h3>Varazuvi Acoustic Guitar pro</h3>
+                        <p>24-bit High Resolution audio virtual in VST <br>32-bit/64-bit/Mac compatible.<br>volume,delay,sustain,release and attack parameters<br>THREE GROUPS: long pitch bend,string noise for added realism </p>
+                        <br>
+                        <div class="user-rate">
+                            <div class="like">
+                                <abbr title="like" style="text-decoration:none;">
+                            <i class="far fa-heart" onclick="tap3()" id="like3">
+                            </i>
+                            </abbr>
+                                <abbr title="unlike" style="text-decoration:none;">
+                            <i class="fas fa-heart" onclick="pop3()" id="unlike3"></i>
+                            </abbr>
+                            </div>
+                            <!--------------------------------------------------ratting---------------------->
+                            <div class="ratting">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <!------------------ratting end-------------------------->
+                            <a href="" class="btn" id="buy-1">view details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  mt-2  text-center text-justify justify-content-between">
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                </div>
+            </div>
+            <!--------------------------------------------fifth instruments started---------------->
+            <div class="row  text-center p-3">
+                <!----------------------this fot image------------------------------------------>
+                <div class="col-lg-3  mt-2">
+                    <a href="" class="img">
+                        <img src="https://booth.pximg.net/81f85020-62f1-40dc-ac31-7ed2c4ca170a/i/1314424/91ccf468-7a5d-464e-a1d8-72fc584ecaf7_base_resized.jpg  ">
+                    </a>
+                </div>
+                <!--------------------ended------------->
+                <!--------------------content started------------->
+                <div class="col-lg-4  mt-2" id="productdetails" onclick="rotate()">
+                    <div class="card-face" id="face" onclick="facePage()">
+                        <h3>Varazuvi Acoustic Guitar pro</h3>
+                        <p>24-bit High Resolution audio virtual in VST <br>32-bit/64-bit/Mac compatible.<br>volume,delay,sustain,release and attack parameters<br>THREE GROUPS: long pitch bend,string noise for added realism </p>
+                        <br>
+                        <div class="user-rate">
+                            <div class="like">
+                                <abbr title="like" style="text-decoration:none;">
+                            <i class="far fa-heart" onclick="tap4()" id="like4">
+                            </i>
+                            </abbr>
+                                <abbr title="unlike" style="text-decoration:none;">
+                            <i class="fas fa-heart" onclick="pop4()" id="unlike4"></i>
+                            </abbr>
+                            </div>
+                            <!--------------------------------------------------ratting---------------------->
+                            <div class="ratting">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <!------------------ratting end-------------------------->
+                            <a href="" class="btn" id="buy-1">view details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  mt-2  text-center text-justify justify-content-between">
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                    <audio controls autoplay loop=true;>
+<source src="file:///home/arjun/Music/Shape%20Of%20You%20(James%20Carter%20x%20Levi%20Remix).mp3"type=audio/mp3>
+                        </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        //only for likes---------------------------------------------------------------only for likes//
+
+        /*for first instrument*/
+
+        let heart = document.getElementById("like");
+        let unheart = document.getElementById("unlike");
+
+        function tap() {
+            if (heart.style.display == "flex") {
+                heart.style.display = "none";
+                unheart.style.display = "flex";
+                unheart.style.animation = "none";
+            } else {
+                heart.style.display = "flex";
+            }
+        }
+
+        function pop() {
+            if (unheart.style.display == "flex") {
+                unheart.style.display = "none";
+                heart.style.display = "flex";
+            } else {
+                unheart.style.display = "flex";
+            }
+        }
+
+        /*first intsrumnets like animation was ended*/
+
+        /*second instrument start*/
+
+        let firstheart = document.getElementById("like1");
+        let firstunheart = document.getElementById("unlike1");
+
+        function tap1() {
+            if (firstheart.style.display == "flex") {
+                firstheart.style.display = "none";
+                firstunheart.style.display = "flex";
+            } else {
+                firstheart.style.display = "flex";
+            }
+        }
+
+        function pop1() {
+            if (firstunheart.style.display == "flex") {
+                firstunheart.style.display = "none";
+                firstheart.style.display = "flex";
+            } else {
+                firstunheart.style.display = "flex";
+            }
+        }
+        /*first like animation was ended*/
+        /*second instrument start*/
+        let secondheart = document.getElementById("like2");
+        let secondunheart = document.getElementById("unlike2");
+
+        function tap2() {
+            if (secondheart.style.display == "flex") {
+                secondheart.style.display = "none";
+                secondunheart.style.display = "flex";
+                secondunheart.style.animation = "none";
+            } else {
+                secondheart.style.display = "flex";
+            }
+        }
+
+        function pop2() {
+            if (secondunheart.style.display == "flex") {
+                secondunheart.style.display = "none";
+                secondheart.style.display = "flex";
+            } else {
+                secondunheart.style.display = "flex";
+            }
+        }
+
+        /*second like animation was ended*/
+        /*third instrument start*/
+
+        let thirdheart = document.getElementById("like3");
+        let thirdunheart = document.getElementById("unlike3");
+
+        function tap3() {
+            if (thirdheart.style.display == "flex") {
+                thirdheart.style.display = "none";
+                thirdunheart.style.display = "flex";
+            } else {
+                thirdheart.style.display = "flex";
+            }
+        }
+
+        function pop3() {
+            if (thirdunheart.style.display == "flex") {
+                thirdunheart.style.display = "none";
+                thirdheart.style.display = "flex";
+            } else {
+                thirdunheart.style.display = "flex";
+            }
+        }
+        /*third like nimation was ended*/
+        /*fourth instrument start*/
+        let fourheart = document.getElementById("like4");
+        let fourunheart = document.getElementById("unlike4");
+
+        function tap4() {
+            if (fourheart.style.display == "flex") {
+                fourheart.style.display = "none";
+                fourunheart.style.display = "flex";
+            } else {
+                fourheart.style.display = "flex";
+            }
+        }
+
+        function pop4() {
+            if (fourunheart.style.display == "flex") {
+                fourunheart.style.display = "none";
+                fourheart.style.display = "flex";
+            } else {
+                fourunheart.style.display = "flex";
+            }
+        }
+        /*fourth like animation was ended*/
+    </script>
+    <!-----    <script>
+        var node_list = document.getElementsById("like");
+
+        function tap() {
+            var node_list = document.getElementsById("like");
+            for (var i = 0; i <
+                node_list.length; i++) {
+                if (node_list[i].style.display == "flex") {
+                    node_list[i].style.display = "none";
+                    unheart.style.display = "flex";
+                    unheart.style.transform = "scale(1.5)";
+                } else {
+                    node_list[i].style.display = ' flex ';
+                }
+            }
+        }
+    </script>
+
+    <script>
+        let toggle = document.getElementById("productdetails");
+
+        function rotate() {
+            if (toggle.style.transform == "rotateY(0deg)") {
+                toggle.style.transform = "rotateY(180deg)";
+            } else {
+                toggle.style.transform = "rotateY(0deg)";
+            }
+        }
+    </script>-->
+    <!----   <script>
+        let page1 = document.getElementById("face");
+        let page2 = document.getElementById("back");
+
+        function facePage() {
+            if (page1.style.display == "flex") {
+                page1.style.display = "none";
+                page2.style.display = "flex";
+            } else {
+                page1.style.display = "flex";
+            }
+        }
+
+        function backPage() {
+            if (page2.style.display == "flex") {
+                page2.style.display = "none";
+                page1.style.display = "flex";
+            } else {
+                page2.style.display = "flex";
+            }
+        }
+    </script>--->
+</body>
+
+</html>
