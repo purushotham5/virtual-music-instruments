@@ -2,118 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>virtual music(home)</title>
-    <link rel="stylesheet" href="frontend.css" />
-
-    <!------------google fonts------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Architects+Daughter&family=Bebas+Neue&family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=EB+Garamond:ital@1&family=Josefin+Sans:wght@100&family=Open+Sans+Condensed:wght@300&family=Sacramento&family=Shizuru&display=swap"
-        rel="stylesheet" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Animated Heart Like Button</title>
+    <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+    <link rel="stylesheet" type="text/css" href="frontend.css">
     <!----------------------------------------------this link for fontwansome---cdn-----------link---------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!----------------------------------------------------------------link is ended-------------------------------------->
     <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/getbootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!----------------------------------------------------------------link is ended-------------------------------------->
 </head>
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light nav-tabs">
+        <!------------------------navigation bsr was started----------------->
+        <nav class="navbar navbar-expand-lg   navbar-light  nav-tabs">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand">
-                    <img src="https://appedreview.com/app/wp-content/uploads/2017/02/Screen-Shot-2017-02-20-at-7.35.04-AM.png" style="height: 50px; width: 150px" class="img-fluid" />
+                    <img src="https://appedreview.com/app/wp-content/uploads/2017/02/Screen-Shot-2017-02-20-at-7.35.04-AM.png" style="height:50px;width:150px;" class="img-thumbnail">
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar">
                     <ul class="nav navbar-nav navbar-right nav-pills mt-3">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-links active" data-toggle="pills" onclick="homeOpen()" id="homeActive"><i class="fa fa-fw fa-home"></i>home</a
-                >
-              </li>
-              <!-----------------------------this is for about dropdown----------------->
-              <li class="nav-item dropdown dropend">
-                <a
-                  href=""
-                  class="nav-links dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  onclick="aboutOpen()"
-                  >About</a
-                >
-                <ul class="dropdown-menu bg-info">
-                  <li>
-                    <a
-                      href="testimonial.html"
-                      class="dropdown-item glyphicon-text-background text-capitalize text-center text-dark"
-                      >testimonials</a
-                    >
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a
-                      href="team.html"
-                      class="dropdown-item text-capitalize text-center"
-                      >teams</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!--------------------this about dropdown was ended------------------>
-              <li class="nav-item">
-                <a href=" " class="nav-links">services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href=" " class="nav-links"><i class="fa fa-fw fa-envelope"></i>contact</a
-                >
-              </li>
-              <!-----------------for profile------------------>
-              <li class="nav-item dropdown dropstart">
-                <a
-                  href=" "
-                  class="nav-links-1 dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  ><img
-                    src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png"
-                    class="img-responsive img-circle"
-                    style="height: 50px; width: 50px"
-                /></a>
-                            <ul class="dropdown-menu bg-dark text-left" id="profiledrop">
-                                <li>
-                                    <a href="heart.html" class="dropdown-item">lisenced products</a
-                    >
-                  </li>
-                  <li>
-                    <a href=" " class="dropdown-item">liked product</a>
+                                               <li class="nav-item ">
+                                <a href="frontend(home).html" class="nav-links active" data-toggle="pills" onclick="homeOpen()" id="homeActive"><i class="fa fa-fw fa-home"></i>home</a>
                                 </li>
+                                               <li class="nav-item ">
+                                <a href="frontend(home).html" class="nav-links active" data-toggle="pills" onclick="homeOpen()" id="homeActive"><i class="fa fa-fw fa-home"></i>about</a>
+                                </li>
+                                               <li class="nav-item ">
+                                <a href="frontend(home).html" class="nav-links active" data-toggle="pills" onclick="homeOpen()" id="homeActive"><i class="fa fa-fw fa-home"></i>services</a>
+                                </li>
+                                               <li class="nav-item ">
+                                <a href="frontend(home).html" class="nav-links active" data-toggle="pills" onclick="homeOpen()" id="homeActive"><i class="fa fa-fw fa-home"></i>contact</a>
+                                </li>
+                        <li class="nav-item dropdown dropstart">
+                            <a href="" class="nav-links  dropdown-toggle"id="img" data-bs-toggle="dropdown"><img src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" class="img-responsive img-circle" style="height: 50px; width: 50px"></a>
+                            <ul class="dropdown-menu bg-info">
+                                <li><a href="heart.html" class="dropdown-item glyphicon-text-background text-capitalize text-center">Licieced products</a></li>
                                 <li>
-                                    <a href=" " class="dropdown-item"><i class="fa fa-fw fa-user"></i> my account</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-------------------------profile was ended-------------->
-            </ul>
-          </div>
-        </div>
-      </nav>
+                                    <hr class="dropdown-divider" id="dropdown-divider">
+                                </li>
+                                    <li><a href="drum.html" class="dropdown-item text-capitalize text-center">Liked Products<a></li>
+                                        <li>
+                                        <hr class="dropdown-divider">
+                                        </li>
+                                    <li><a href="rolanddrum.html" class="dropdown-item text-capitalize text-center">My Account<a></li>
+                                        <li>
+                                     
+                                </ul>
+                            </li>
+   
+                                <!-----------------------------this is for about dropdown----------------->
+
+                            </ul>
+                </div>
+
+            </div>
+            </div>
+        </nav>
+    
     </header>
-    <!--------------------------------------------------------------------->
-    <!-------------to redirect in to another webpage-------------->
-    <!----   <script>   
-        function homeOpen() {
-            location.replace("team.html ");
-        }
-    </script>-->
-    <!-------------------------------ended--------------->
-  </body>
+   
+</body>
+
 </html>
